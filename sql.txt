@@ -1,3 +1,8 @@
+CREATE TABLE bangid(
+    ComboID INT PRIMARY KEY
+);
+
+
 CREATE TABLE bang
 (
  id int primary key,
@@ -8,11 +13,6 @@ CREATE TABLE bang
  ComboID int,
 FOREIGN KEY (ComboID) REFERENCES bangid(ComboID)
 )
-
-
-CREATE TABLE bangid(
-    ComboID INT PRIMARY KEY
-);
 
 -- Thêm dữ liệu vào bảng bangid
 
