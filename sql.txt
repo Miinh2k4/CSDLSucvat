@@ -6,7 +6,7 @@ CREATE TABLE bang
  address varchar(50),
  gpa int,
  ComboID int,
-FOREIGN KEY (ComboID) REFERENCES category(ComboID)
+FOREIGN KEY (ComboID) REFERENCES bangid(ComboID)
 )
 
 
