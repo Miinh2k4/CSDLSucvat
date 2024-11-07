@@ -1,0 +1,27 @@
+CREATE TABLE bang
+(
+ id int primary key,
+ name varchar(30),
+ age int,
+ address varchar(50),
+ gpa int,
+ ComboID int,
+FOREIGN KEY (ComboID) REFERENCES category(ComboID)
+)
+
+
+CREATE TABLE bangid(
+    ComboID INT PRIMARY KEY
+);
+
+-- Thêm dữ liệu vào bảng bangid
+
+INSERT INTO bangid (ComboID) VALUES (1);
+INSERT INTO bangid (ComboID) VALUES (2);
+INSERT INTO bangid (ComboID) VALUES (3);
+
+-- Thêm dữ liệu vào bảng bang
+
+INSERT INTO bang (id, name, age, address, gpa, ComboID) VALUES (1, 'Nguyen Van A', 20, '123 Đường Chính', 3, 1);
+INSERT INTO bang (id, name, age, address, gpa, ComboID) VALUES (2, 'Tran Thi B', 22, '456 Đường Phong', 3, 2);
+INSERT INTO bang (id, name, age, address, gpa, ComboID) VALUES (3, 'Le Van C', 21, '789 Đường Sồi', 4, 3);
